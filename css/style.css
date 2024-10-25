@@ -15,8 +15,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
+    position: relative;
 }
-
+.Phone_menu{
+    display: none;
+    border: 1.5px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 2px 8px;
+}
 .nav_items{
     list-style: none;
     display: flex;
@@ -80,41 +86,85 @@
 }
 
 
-
-.purple_circle{
-    position: absolute;
-    background-color: #5647ff;
-    border-radius: 50%;
-    width: 500px;
-    height: 500px;
-    z-index: -1;
-    top: -200px;
-    right: -200px;
+.mobile_menu{
+    display: none;
 }
 
-.orange_circle{
-    position: absolute;
-    background-color: orange;
-    border-radius: 50%;
-    width: 500px;
-    height: 500px;
-    z-index: -2;
-    top: -210px;
-    right: -160px;
+/*-----------IPAD NAV----------*/
+@media(max-width: 1030px){
+    .Phone_menu{
+        display: block;
+        z-index: 10px;
+    }
+    .Navigation_bar{
+        justify-content: flex-start;
+        padding: 15px 20px;
+        background-color: #060045;
+        color: white;
+    }
+    .Navigation_bar h5{
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+    .nav_buttons{
+        display: none;
+    }
+    .nav_items{
+        display: block;
+        position: absolute;
+        padding: 10px 0;
+        margin-top: 20px;
+        right: 0;
+        width: 0%;
+        background-color: #060045;
+        height: 394.5px;
+        z-index: 9px;
+        text-align: center;
+        transition: width ease-in-out 0.3s;
+    }
+    .nav_items.active{
+        width: 40%;
+    }
+    .mobile_menu{
+        display: block;
+    }
+    .nav_links{
+        width: max-content;
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    
+    .nav_links.active{
+        color: #786dfe;
+        font-weight: 550;
+    }
+    
+    
+    .nav_links.active::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #786dfe;
+        bottom: 0;
+        left: 0;
+    }
 }
 
+/*---------------IPHONE 12/13 PRO MAX------------*/
+@media(max-width: 430px){
+    
+    .nav_items.active{
+        width: 50%;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
+    .nav_items.active{
+        width: 50%;
+        height: 828.5px;
+    }
+}
 
 
 
@@ -189,9 +239,113 @@ margin-bottom: 10px;
     margin-right: 30px;
 }
 
+/*------------IPAD 12 PRO-----------*/
+@media(max-width: 1030px){
+    .hero_textcontent h1{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .signup_arrow{
+        position: absolute;
+        top: 9px;
+        right: 15px;
+    }
+}
+/*-------------IPAD 11 PRO-------*/
+@media(max-width: 1030px){
+    .hero_textcontent h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .signup_arrow{
+        position: absolute;
+        top: 7.5px;
+        right: 15px;
+    }
+    .hero_getstarted{
+        font-size: 14px;
+        padding: 10px 40px 10px 10px;
+    }
+    .Learn_More{
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+/*------------IPHONE 12/13 PRO MAX----------*/
+@media(max-width: 430px){
 
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+    }
+    .hero_textcontent{
+        width: 100%;
+        margin-right: 0;
+        padding: 20px;
+    }
+    
+    .hero_textcontent h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+    }
+    
+    .hero_image{
+        width: 80%;
+    }
+    .hero_image img{
+        width: 100%;
+        height: auto;
+    }
+    .hero_buttons{
+        margin-top: 20px;
+    }
 
+    .hero_getstarted{
+        font-size: 14px;
+        padding: 10px 40px 10px 10px;
+    }
+    .signup_arrow{
+        position: absolute;
+        top: 7.5px;
+        right: 15px;
+    }
+    .Learn_More{
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    
+ 
+}
+/*------------IPHONE 6 PLUS, 7 PLUS, 8 PLUS----------*/
+@media(max-width:418px){
+    
+    .hero_image{
+        width: 50%;
+    }
+}
+/*------------IPHONE 12/13+ PRO-------------*/
+@media(max-width: 400px){
+    
+    .hero_textcontent h1{
+    font-size: 38px;
+    }
+    
 
+}
+
+/*------------IPHONE 11 PRO and IPHONE X-------------*/
+@media(max-width: 380px){
+    
+    .hero_textcontent h1{
+        font-size: 35px;
+    }
+    .hero_image{
+        width: 75%;
+    }
+}
 
 
 
