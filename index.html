@@ -23,14 +23,12 @@
     <header class="Navigation_bar">
         <h5>CHAINZ Academy</h5>
 
-        <nav>
+        <nav class="Desktop_Nav">
             <ul class="nav_items">
                 <li class="nav_links active"><a href="#"></a>Home</li>
                 <li class="nav_links"><a href="#"></a>About Us</li>
                 <li class="nav_links"><a href="#"></a>Course</li>
                 <li class="nav_links"><a href="#"></a>Contact</li>
-                <li class="nav_links mobile_menu"><a href="#"></a>Sign in</li>
-                <li class="nav_links mobile_menu"><a href="#"></a>Sign up</li>
             </ul>
         </nav>
 
@@ -43,9 +41,20 @@
             </a>
         </div>
 
-        <span class="Phone_menu" onclick="Open_Menu()"><i class="fa-solid fa-bars"></i></span>
+        <span class="Phone_menu" onclick="Open_Menu(event)"><i class="fa-solid fa-bars"></i></span>
 
     </header>
+
+    <div class="Mobile_Nav">
+        <ul class="nav_items">
+            <li class="nav_links active"><a href="#"></a>Home</li>
+            <li class="nav_links"><a href="#"></a>About Us</li>
+            <li class="nav_links"><a href="#"></a>Course</li>
+            <li class="nav_links"><a href="#"></a>Contact</li>
+            <li class="nav_links"><a href="#"></a>Sign in</li>
+            <li class="nav_links"><a href="#"></a>Sign up</li>
+        </ul>
+    </div>
 
 
 
@@ -119,7 +128,7 @@
 
                     <div class="text_content">
     
-                        <h4>Our Vison</h4>
+                        <h4>Our Vision</h4>
     
                         <p>To be a global leader in online education in Uganda, transforming lives by making learning
                             available to everyone, everywhere. We strive to build a country where anyone can unlock their
@@ -352,5 +361,8 @@
     </div>
 </div>
 
+
+
+<script src="JavaScript/index.js"></script>
 </body>
 </html>
