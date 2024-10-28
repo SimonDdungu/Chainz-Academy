@@ -679,6 +679,7 @@ margin-bottom: 10px;
     .Each_Course_Cards{
       margin-bottom: 20px;
     }
+    
 }
 
 /*-----------IPAD 11 PRO------------*/
@@ -693,9 +694,22 @@ margin-bottom: 10px;
     .Third_Section{
         margin-top: 50px;
     }
+    .T_S_Content > h2{
+        font-size: 23px;
+    }
     .Course_Cards{
         margin-top: 30px;
         max-width: 300px;
+    }
+    .T_S_deatils{
+        gap: 0;
+    }
+    .T_S_cardinfo{
+        gap: 0;
+        margin-right: 30px;
+    }
+    .info_details{
+        margin-right: 8px;
     }
 }
 /*----------Works for iphone X, 11, PRO-----*/
